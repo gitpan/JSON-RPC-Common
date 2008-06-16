@@ -14,21 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 7eda3f779259b376b68ffeb8a6f388b0270990bb Changes
+SHA1 ad6d034cd1cb9fb318a9cdf4298c9569e2033883 Changes
 SHA1 6b01a0129a52540136a4fded9bd06f7659f05fae MANIFEST
 SHA1 e8482690dad0ff3aaa335aa5b8b650851e504871 MANIFEST.SKIP
-SHA1 19f3f1891951e96231a46841bb9c6d3943842ab4 META.yml
+SHA1 59cf35afda681ea4dac97a63bbf586b39176caed META.yml
 SHA1 f08d3a34af233d6e950393b8e326b85e976f3e4b Makefile.PL
 SHA1 de74a8a3b29d7f9015d1bf73eecc2e7183acad8f examples/http_engine.pl
-SHA1 205e88af74021fc99d83f0e372bfd940db6bb6a8 lib/JSON/RPC/Common.pm
-SHA1 dc9609b8fea94807f4cc1dcde07e4a90fe189641 lib/JSON/RPC/Common/Marshal/HTTP.pm
+SHA1 d390da95a2530fdc9d2a99962fb71a986d6163d4 lib/JSON/RPC/Common.pm
+SHA1 529b6b80aa1532798373cf4735705e3cfefa32e9 lib/JSON/RPC/Common/Marshal/HTTP.pm
 SHA1 08d86d274f4d9222a1abde7bc5bbc7dddd75beab lib/JSON/RPC/Common/Marshal/Text.pm
 SHA1 beab4c059358a12158996109f3ba14ecbd393dc2 lib/JSON/RPC/Common/Message.pm
-SHA1 55e9b00b817c0736b279030e8157aa4fc2d8b479 lib/JSON/RPC/Common/Procedure/Call.pm
+SHA1 95a81aed346a33423ec679c4bdded43c408d461f lib/JSON/RPC/Common/Procedure/Call.pm
 SHA1 2108d99e2b0d6525f5947751084adcc060003be2 lib/JSON/RPC/Common/Procedure/Call/Version_1_0.pm
 SHA1 d2d088ee0503149a2d9aec484c2e5c94d308e508 lib/JSON/RPC/Common/Procedure/Call/Version_1_1.pm
 SHA1 4bdbc66aa0e139db2107bc5f9754971a18ddc116 lib/JSON/RPC/Common/Procedure/Call/Version_2_0.pm
-SHA1 57146dd7ac7a9d07432fca72ab9b1ed9f55d7fd6 lib/JSON/RPC/Common/Procedure/Return.pm
+SHA1 664224460539623ced56e49fd2f26e5fb544063c lib/JSON/RPC/Common/Procedure/Return.pm
 SHA1 d6af90db1ef0777db71bbf65425d9c3fbb13139a lib/JSON/RPC/Common/Procedure/Return/Error.pm
 SHA1 ad2f051204216d2ad2097b0649ebeec7fcfba99c lib/JSON/RPC/Common/Procedure/Return/Version_1_0.pm
 SHA1 546bb0a242e1880742c0706f948cc43b5b7a3a20 lib/JSON/RPC/Common/Procedure/Return/Version_1_0/Error.pm
@@ -36,7 +36,7 @@ SHA1 7b300570d0b2d06f10074c4842e0d82e83020000 lib/JSON/RPC/Common/Procedure/Retu
 SHA1 f1b3a2f02a22dee05351d7061109226299c58e99 lib/JSON/RPC/Common/Procedure/Return/Version_1_1/Error.pm
 SHA1 3f752aff88276339797275b2a6f72b1e07f2e6c0 lib/JSON/RPC/Common/Procedure/Return/Version_2_0.pm
 SHA1 ffef1866730944bbdac6d17e24edb34dfdb2d85d lib/JSON/RPC/Common/Procedure/Return/Version_2_0/Error.pm
-SHA1 26151cef3889ad50a2e2155f076ca472b8c1a3dc lib/JSON/RPC/Common/TypeConstraints.pm
+SHA1 47d640a5a72c194b42fb933572fbb3fa3b0c6d78 lib/JSON/RPC/Common/TypeConstraints.pm
 SHA1 d41f4a4f092a58c9755aa5fb49c0813547e1fee9 t/01_load.t
 SHA1 0c97d6ca520688050ff20993bde19c58aafd95ea t/marshal.t
 SHA1 7975872d20fda8c2cfef1404dae59f6c92d80808 t/marshal_http.t
@@ -47,7 +47,7 @@ SHA1 5083298f6e84e4568bd57b8c74d8198cc757934e t/request_2_0.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFIVsgcVCwRwOvSdBgRApeBAJwKbS/I7yJ0KKeir1A3nXrBQg+g5wCgsAQa
-9TUyc3577WtZQtlMbKRyHHE=
-=4YEp
+iD8DBQFIVtDFVCwRwOvSdBgRApV+AKCjYEYkmTAgC95HZd5Z9rmH1V6ElQCggyN4
+jc0559Nek9r8hUBr3PoLNhs=
+=u4RE
 -----END PGP SIGNATURE-----
