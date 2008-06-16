@@ -34,14 +34,24 @@ has return_class => (
 	handles => { "inflate_return" => "inflate" },
 );
 
+sub deflate_call {
+	my ( $self, $call ) = @_;
+	$call->deflate;
+}
+
+sub deflate_return {
+	my ( $self, $return ) = @_;
+	$return->deflate;
+}
+
 sub call_to_json {
 	my ( $self, $call ) = @_;
-	$self->encode( $call->deflate );
+	$self->encode( $self->deflate_call($call) );
 }
 
 sub return_to_json {
 	my ( $self, $ret ) = @_;
-	$self->encode( $ret->deflate );
+	$self->encode( $self->deflate_return($ret) );
 }
 
 sub json_to_call {
@@ -64,14 +74,14 @@ __END__
 
 =head1 NAME
 
-JSON::RPC::Common::Marshall::Text - JSON text marshalling for
+JSON::RPC::Common::Marshal::Text - JSON text marshalling for
 L<JSON::RPC::Common>.
 
 =head1 SYNOPSIS
 
-	use JSON::RPC::Common::Marshall::Text;
+	use JSON::RPC::Common::Marshal::Text;
 
-	my $m = JSON::RPC::Common::Marshall::Text->new;
+	my $m = JSON::RPC::Common::Marshal::Text->new;
 
 	my $return_obj = $m->json_to_return($json_text);
 
