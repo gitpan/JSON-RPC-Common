@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               JSON-RPC-Common
-version:            0.04
+version:            0.05
 abstract:           ~
 author:  []
 license:            unknown
@@ -10,15 +10,16 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    HTTP::Request:     0
-    JSON:              2.11
-    MIME::Base64:      0
-    Moose:             0.48
-    MooseX::Types:     0
-    namespace::clean:  0.08
-    Test::Exception:   0
-    Test::use::ok:     0
-    URI::QueryParam:   0
+    HTTP::Request:        0
+    JSON:                 2.11
+    MIME::Base64:         0
+    Moose:                0.48
+    MooseX::Types:        0
+    MooseX::Types::Moose:  0
+    namespace::clean:     0.08
+    Test::Exception:      0
+    Test::use::ok:        0
+    URI::QueryParam:      0
 no_index:
     directory:
         - t
