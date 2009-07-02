@@ -16,7 +16,7 @@ use ok 'JSON::RPC::Common::Marshal::Text';
 
 	isa_ok( $m_json, "JSON::RPC::Common::Marshal::Text" );
 
-	my $call = $m_json->json_to_call(<<JSON);
+	my $call = $m_json->json_to_message(<<JSON);
 {	"jsonrpc": "2.0"
 ,	"method":  "oink"
 ,	"params":  { "foo": 3 }
@@ -32,7 +32,7 @@ JSON
 
 	my $res = $call->return_result("bah");
 
-	my $text = $m_json->return_to_json($res);
+	my $text = $m_json->message_to_json($res);
 
 	is_deeply(
 		from_json($text),

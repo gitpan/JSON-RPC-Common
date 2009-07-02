@@ -23,24 +23,23 @@ sub inflate {
 	my ( $class, @args ) = @_;
 
 	my $data;
-	if (@args == 1) {
-		if (defined $args[0] and (ref($args[0])||'') eq 'HASH') {
-			$data = { %{ $args[0] } };
-		}
+	if (@args == 1 and defined $args[0] and (ref($args[0])||'') eq 'HASH') {
+		$data = { %{ $args[0] } };
 	} else {
 		if ( @args % 2 == 1 ) {
 			unshift @args, "message";
 		}
 		$data = { @args };
 	}
-
 	my %constructor_args;
 
 	foreach my $arg ( qw(message code) ) {
 		$constructor_args{$arg} = delete $data->{$arg} if exists $data->{$arg};
 	}
 
-	$constructor_args{data} = (join(" ", keys %$data) eq 'data' ? $data->{data} : $data);
+	if ( keys %$data ) {
+		$constructor_args{data} = (join(" ", keys %$data) eq 'data' ? $data->{data} : $data);
+	}
 
 	$class->new(%constructor_args);
 }
@@ -60,7 +59,7 @@ has message => (
 has code => (
 	isa => "Int",
 	is  => "rw",
-	predicate => "has_message",
+	predicate => "has_code",
 );
 
 # FIXME delegate to a dictionary

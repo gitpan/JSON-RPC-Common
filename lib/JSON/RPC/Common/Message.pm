@@ -3,6 +3,10 @@
 package JSON::RPC::Common::Message;
 use Moose::Role;
 
+use Carp qw(croak);
+
+use namespace::clean -except => [qw(meta)];
+
 requires 'deflate';
 
 sub inflate {
@@ -21,7 +25,7 @@ sub inflate {
 		$data = { @args };
 	}
 
-	my $subclass = $class->_version_class($data);
+	my $subclass = $class->_version_class( $class->_get_version($data), $data );
 
 	Class::MOP::load_class($subclass);
 
@@ -43,11 +47,19 @@ sub _get_version {
 }
 
 sub _version_class {
-	my ( $class, $data ) = @_;
-
-	my $version = $class->_get_version($data);
+	my ( $class, $version, $data ) = @_;
 
 	my @numbers = ( $version =~ /(\d+)/g ) ;
+
+	if ( $class eq __PACKAGE__ and $data ) {
+		if ( exists $data->{method} ) {
+			$class = "JSON::RPC::Common::Procedure::Call";
+		} elsif ( exists $data->{id} or exists $data->{result} ) {
+			$class = "JSON::RPC::Common::Procedure::Return";
+		} else {
+			croak "Couldn't determine type of message (call or return)";
+		}
+	}
 
 	return join( "::", $class, join("_", Version => @numbers) );
 }
