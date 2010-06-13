@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.62.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,21 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 85a7000ce31e3f598161fc08204395a14bf9b6d0 Changes
+SHA1 ef1c1b6a629b8189c5a1ad10d724527ed60af15d Changes
 SHA1 6b01a0129a52540136a4fded9bd06f7659f05fae MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 0e7af6640677e21c1d53eaa3c1afce452c69c483 META.yml
+SHA1 b4bf3fa266c5bac55230d141aa5e76fcd85c3edc META.yml
 SHA1 5a9dc9dec3a6c2ae651f4361c90a5a349e03982f Makefile.PL
 SHA1 de74a8a3b29d7f9015d1bf73eecc2e7183acad8f examples/http_engine.pl
-SHA1 d9f43241a6d4087298e2c03580f724c7e3ed168e lib/JSON/RPC/Common.pm
-SHA1 3f7c732ff06e7f1b4e132b666a324eb2c68ec4e5 lib/JSON/RPC/Common/Marshal/HTTP.pm
+SHA1 13302dece32be2e3506026e0ea827303bef849fb lib/JSON/RPC/Common.pm
+SHA1 08b6c2775bd94c334908694aee97d7bb2d612665 lib/JSON/RPC/Common/Marshal/HTTP.pm
 SHA1 61e151bc9076ce2bfb5f6cb52a9391ad27e36339 lib/JSON/RPC/Common/Marshal/Text.pm
 SHA1 36f71550926789ffddc803829bf84525435b9acf lib/JSON/RPC/Common/Message.pm
 SHA1 241f656f4e16ee9843bdd2ec7dfa9b5b588966dd lib/JSON/RPC/Common/Procedure/Call.pm
 SHA1 2108d99e2b0d6525f5947751084adcc060003be2 lib/JSON/RPC/Common/Procedure/Call/Version_1_0.pm
 SHA1 d872392dd4b9a6bd1a3222ec5911885385945403 lib/JSON/RPC/Common/Procedure/Call/Version_1_1.pm
 SHA1 4bdbc66aa0e139db2107bc5f9754971a18ddc116 lib/JSON/RPC/Common/Procedure/Call/Version_2_0.pm
-SHA1 c7d2439eb35ae834c0ede9bdf277c45826f00639 lib/JSON/RPC/Common/Procedure/Return.pm
+SHA1 554562447f10e8272417b21005bc94a478e89ee8 lib/JSON/RPC/Common/Procedure/Return.pm
 SHA1 72f90733b378e219f0c077e6d08fb895c2d48c00 lib/JSON/RPC/Common/Procedure/Return/Error.pm
 SHA1 ad2f051204216d2ad2097b0649ebeec7fcfba99c lib/JSON/RPC/Common/Procedure/Return/Version_1_0.pm
 SHA1 546bb0a242e1880742c0706f948cc43b5b7a3a20 lib/JSON/RPC/Common/Procedure/Return/Version_1_0/Error.pm
@@ -39,15 +39,15 @@ SHA1 4d131b443384540f48a43ed14012e76b1767634d lib/JSON/RPC/Common/Procedure/Retu
 SHA1 07320176d47f46048409c9ef0b5316e2eea15bb9 lib/JSON/RPC/Common/TypeConstraints.pm
 SHA1 d41f4a4f092a58c9755aa5fb49c0813547e1fee9 t/01_load.t
 SHA1 ded2819b7e56bfd4a666458b8f0b2d628f74e4be t/marshal.t
-SHA1 e6cc76ef1f5413a84c8c91962ae69c917562dac9 t/marshal_http.t
+SHA1 42dd6694598075942b988b9df42e5cec47557158 t/marshal_http.t
 SHA1 082091eb53d5f09d6b4e58cb9fbe2b6b3d5c1f7e t/object.t
-SHA1 114ae6e86c33c47d0595b45e58aebdb470b2c883 t/request_1_0.t
+SHA1 8193e943c3552977af8caa2635cbe4fd38d62aef t/request_1_0.t
 SHA1 7b47d419cfeea10db0b9113f06bec9cc11acc497 t/request_1_1.t
 SHA1 4a9a4e1d484807136ae9165ec7f23695f0608b86 t/request_2_0.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.7 (Darwin)
+Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
 
-iD8DBQFKeunJVCwRwOvSdBgRAv3mAJ9M+R3EvLafd1WWNIqLZRJJJ1O0xwCfWBe3
-gTG5ndKRiTgLaCgMGTp4ax0=
-=278y
+iEYEARECAAYFAkwUuUYACgkQVCwRwOvSdBhG5wCeMHUTSD5BZx+0JQHp7mtUFy3Z
+Z+EAn1LtfpxonXp6XFSLUX63WOM7EzKk
+=VwqS
 -----END PGP SIGNATURE-----
