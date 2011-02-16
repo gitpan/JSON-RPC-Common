@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::TypeConstraints;
 BEGIN {
-  $JSON::RPC::Common::TypeConstraints::VERSION = '0.09';
+  $JSON::RPC::Common::TypeConstraints::VERSION = '0.10';
 }
 # ABSTRACT: Type constraint library
 
@@ -32,7 +32,7 @@ JSON::RPC::Common::TypeConstraints - Type constraint library
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

@@ -30,9 +30,9 @@ my %WriteMakefileArgs = (
     'MooseX::Types::Moose' => '0',
     'Try::Tiny' => '0',
     'URI::QueryParam' => '0',
-    'namespace::clean' => '0.08'
+    'namespace::clean' => '0.20'
   },
-  'VERSION' => '0.09',
+  'VERSION' => '0.10',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common;
 BEGIN {
-  $JSON::RPC::Common::VERSION = '0.09';
+  $JSON::RPC::Common::VERSION = '0.10';
 }
 # ABSTRACT: Transport agnostic JSON RPC helper objects
 
@@ -18,7 +18,7 @@ JSON::RPC::Common - Transport agnostic JSON RPC helper objects
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

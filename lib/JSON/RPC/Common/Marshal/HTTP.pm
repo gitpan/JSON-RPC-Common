@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Marshal::HTTP;
 BEGIN {
-  $JSON::RPC::Common::Marshal::HTTP::VERSION = '0.09';
+  $JSON::RPC::Common::Marshal::HTTP::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: Convert L<HTTP::Request> and L<HTTP::Response> to/from L<JSON::RPC::Common> calls and returns.
@@ -485,7 +485,7 @@ JSON::RPC::Common::Marshal::HTTP - Convert L<HTTP::Request> and L<HTTP::Response
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

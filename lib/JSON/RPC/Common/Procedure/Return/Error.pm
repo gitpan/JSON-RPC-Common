@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Procedure::Return::Error;
 BEGIN {
-  $JSON::RPC::Common::Procedure::Return::Error::VERSION = '0.09';
+  $JSON::RPC::Common::Procedure::Return::Error::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: Base class for JSON-RPC errors
@@ -85,7 +85,7 @@ JSON::RPC::Common::Procedure::Return::Error - Base class for JSON-RPC errors
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

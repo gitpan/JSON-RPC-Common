@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Message;
 BEGIN {
-  $JSON::RPC::Common::Message::VERSION = '0.09';
+  $JSON::RPC::Common::Message::VERSION = '0.10';
 }
 use Moose::Role;
 # ABSTRACT: JSON-RPC message role
@@ -80,7 +80,7 @@ JSON::RPC::Common::Message - JSON-RPC message role
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 AUTHOR
 

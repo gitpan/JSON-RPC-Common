@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Procedure::Return;
 BEGIN {
-  $JSON::RPC::Common::Procedure::Return::VERSION = '0.09';
+  $JSON::RPC::Common::Procedure::Return::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: JSON-RPC procedure return class
@@ -115,7 +115,7 @@ JSON::RPC::Common::Procedure::Return - JSON-RPC procedure return class
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

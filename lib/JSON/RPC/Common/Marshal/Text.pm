@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Marshal::Text;
 BEGIN {
-  $JSON::RPC::Common::Marshal::Text::VERSION = '0.09';
+  $JSON::RPC::Common::Marshal::Text::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: JSON text marshalling for L<JSON::RPC::Common>.
@@ -110,7 +110,7 @@ JSON::RPC::Common::Marshal::Text - JSON text marshalling for L<JSON::RPC::Common
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

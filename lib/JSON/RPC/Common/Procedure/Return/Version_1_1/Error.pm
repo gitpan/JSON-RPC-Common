@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Procedure::Return::Version_1_1::Error;
 BEGIN {
-  $JSON::RPC::Common::Procedure::Return::Version_1_1::Error::VERSION = '0.09';
+  $JSON::RPC::Common::Procedure::Return::Version_1_1::Error::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: JSON-RPC 1.1 error class.
@@ -53,7 +53,7 @@ JSON::RPC::Common::Procedure::Return::Version_1_1::Error - JSON-RPC 1.1 error cl
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

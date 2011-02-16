@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Procedure::Call::Version_1_0;
 BEGIN {
-  $JSON::RPC::Common::Procedure::Call::Version_1_0::VERSION = '0.09';
+  $JSON::RPC::Common::Procedure::Call::Version_1_0::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: JSON-RPC 1.0 request
@@ -66,7 +66,7 @@ JSON::RPC::Common::Procedure::Call::Version_1_0 - JSON-RPC 1.0 request
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 

@@ -22,10 +22,10 @@ requires:
   MooseX::Types::Moose: 0
   Try::Tiny: 0
   URI::QueryParam: 0
-  namespace::clean: 0.08
+  namespace::clean: 0.20
 resources:
   repository: git://github.com/doy/json-rpc-common.git
-version: 0.09
+version: 0.10
 x_Dist_Zilla:
   plugins:
     -

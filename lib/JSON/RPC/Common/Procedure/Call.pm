@@ -2,7 +2,7 @@
 
 package JSON::RPC::Common::Procedure::Call;
 BEGIN {
-  $JSON::RPC::Common::Procedure::Call::VERSION = '0.09';
+  $JSON::RPC::Common::Procedure::Call::VERSION = '0.10';
 }
 use Moose;
 # ABSTRACT: JSON RPC Procedure Call base class.
@@ -174,7 +174,7 @@ JSON::RPC::Common::Procedure::Call - JSON RPC Procedure Call base class.
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 
