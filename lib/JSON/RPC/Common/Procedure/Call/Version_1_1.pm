@@ -1,7 +1,11 @@
 #!/usr/bin/perl
 
 package JSON::RPC::Common::Procedure::Call::Version_1_1;
+BEGIN {
+  $JSON::RPC::Common::Procedure::Call::Version_1_1::VERSION = '0.09';
+}
 use Moose;
+# ABSTRACT: JSON-RPC 1.1 Procedure Call
 
 use MRO::Compat;
 
@@ -93,13 +97,18 @@ __PACKAGE__->meta->make_immutable;
 
 __PACKAGE__
 
-__END__
 
+
+__END__
 =pod
 
 =head1 NAME
 
 JSON::RPC::Common::Procedure::Call::Version_1_1 - JSON-RPC 1.1 Procedure Call
+
+=head1 VERSION
+
+version 0.09
 
 =head1 SYNOPSIS
 
@@ -127,6 +136,17 @@ exclusive, since Perl doesn't have strong support for named params.
 
 The alternative spec does not offer notifications (it is a TODO item), so
 currently C<is_notification> always returns false.
+
+=head1 AUTHOR
+
+Yuval Kogman <nothingmuch@woobling.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Yuval Kogman.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 

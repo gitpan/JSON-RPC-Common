@@ -1,7 +1,11 @@
 #!/usr/bin/perl
 
 package JSON::RPC::Common::Marshal::Text;
+BEGIN {
+  $JSON::RPC::Common::Marshal::Text::VERSION = '0.09';
+}
 use Moose;
+# ABSTRACT: JSON text marshalling for L<JSON::RPC::Common>.
 
 use Carp qw(croak);
 
@@ -95,14 +99,18 @@ __PACKAGE__->meta->make_immutable();
 
 __PACKAGE__
 
-__END__
 
+
+__END__
 =pod
 
 =head1 NAME
 
-JSON::RPC::Common::Marshal::Text - JSON text marshalling for
-L<JSON::RPC::Common>.
+JSON::RPC::Common::Marshal::Text - JSON text marshalling for L<JSON::RPC::Common>.
+
+=head1 VERSION
+
+version 0.09
 
 =head1 SYNOPSIS
 
@@ -152,6 +160,17 @@ L<JSON::RPC::Common::Procedure::Return>.
 These methods do the conversion from objects to json and vice versa.
 
 =back
+
+=head1 AUTHOR
+
+Yuval Kogman <nothingmuch@woobling.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Yuval Kogman.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
