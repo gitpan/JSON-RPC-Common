@@ -1,13 +1,12 @@
 #!/usr/bin/perl
 
 package JSON::RPC::Common::Message;
-BEGIN {
-  $JSON::RPC::Common::Message::VERSION = '0.10';
-}
+$JSON::RPC::Common::Message::VERSION = '0.11';
 use Moose::Role;
 # ABSTRACT: JSON-RPC message role
 
 use Carp qw(croak);
+use Class::Load qw();
 
 use namespace::clean -except => [qw(meta)];
 
@@ -31,7 +30,7 @@ sub inflate {
 
 	my $subclass = $class->_version_class( $class->_get_version($data), $data );
 
-	Class::MOP::load_class($subclass);
+	Class::Load::load_class($subclass);
 
 	$subclass->new_from_data(%$data);
 }
@@ -70,8 +69,8 @@ sub _version_class {
 
 __PACKAGE__
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -80,7 +79,7 @@ JSON::RPC::Common::Message - JSON-RPC message role
 
 =head1 VERSION
 
-version 0.10
+version 0.11
 
 =head1 AUTHOR
 
@@ -88,10 +87,9 @@ Yuval Kogman <nothingmuch@woobling.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Yuval Kogman.
+This software is copyright (c) 2014 by Yuval Kogman and others.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

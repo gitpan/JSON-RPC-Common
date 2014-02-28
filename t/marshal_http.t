@@ -58,7 +58,7 @@ use JSON::RPC::Common::Marshal::HTTP;
 			if ( $opts->{prefer_get} ) {
 				# GET can't guarantee version, we need to scrub that
 				foreach my $hash ( $def_1, $def_2 ) {
-					foreach my $key qw(version jsonrpc) {
+					foreach my $key (qw(version jsonrpc)) {
 						delete $hash->{$key};
 					}
 				}
@@ -129,7 +129,7 @@ use JSON::RPC::Common::Marshal::HTTP;
 			if ( $opts->{prefer_get} ) {
 				# GET can't guarantee version, we need to scrub that
 				foreach my $hash ( $def_1, $def_2 ) {
-					foreach my $key qw(version jsonrpc) {
+					foreach my $key (qw(version jsonrpc)) {
 						delete $hash->{$key};
 					}
 				}

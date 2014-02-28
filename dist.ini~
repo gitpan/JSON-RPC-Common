@@ -33,4 +33,3 @@ namespace::clean     = 0.20
 Test::Exception = 0
 
 [GithubMeta]
-[ContributorsFromGit]
